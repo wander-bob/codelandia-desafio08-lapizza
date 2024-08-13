@@ -48,3 +48,68 @@ body {
   width: 59.6rem;
   height: 39.4rem;
 }
+
+.most-selled {
+  background-image: url('../assets/bg-items.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-block: 14.4rem;
+}
+
+.most-selled h2 {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 5rem;
+}
+
+.most-selled .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.most-selled .cards .card {
+  padding: 3.2rem;
+  position: relative;
+  min-height: 36rem;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  background-color: #FEFBF4;
+  border: 1px solid #FFF5DE;
+  border-radius: 1.6rem;
+}
+
+.most-selled .cards .card img {
+  height: 12rem;
+  width: 12rem;
+}
+
+.most-selled .cards .card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.most-selled .cards .card strong {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.most-selled .cards .card button {
+  padding: 1.2rem 4rem;
+  background: #FFBD48;
+  border-radius: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.most-selled .cards .card button:hover {
+  filter: opacity(0.9);
+}

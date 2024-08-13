@@ -66,7 +66,8 @@ body {
 .most-selled .cards {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .most-selled .cards .card {
@@ -99,8 +100,9 @@ body {
   font-weight: 600;
 }
 
-.most-selled .cards .card button {
+.btn-primary {
   padding: 1.2rem 4rem;
+  max-width: fit-content;
   background: #FFBD48;
   border-radius: 2.5rem;
   font-size: 1.4rem;
@@ -110,6 +112,71 @@ body {
   transition: filter 0.3s;
 }
 
-.most-selled .cards .card button:hover {
+.btn-primary:hover {
   filter: opacity(0.9);
+}
+
+button.favorite {
+  position: absolute;
+  top: 5.6rem;
+  right: 1.6rem;
+  max-height: 3.2rem;
+  max-width: 3.2rem;
+  padding: 8px;
+  background-color: #FFD4C9;
+  border: 2px solid #FF3536;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.8rem;
+}
+
+button.favorite img {
+  max-height: 2.4rem;
+  max-width: 2.4rem;
+}
+
+footer #about {
+  padding: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer #about img {
+  max-height: 50rem;
+  max-width: 48.8rem;
+}
+
+footer #about .content {
+  max-width: 59.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+footer #about .content h2,
+footer #about .content span {
+  font-size: 3.6rem;
+  font-weight: 600;
+  color: #2E2E2E;
+}
+
+footer #about .content span:nth-child(1) {
+  color: #FFBD48;
+}
+
+footer #about .content span:nth-child(2) {
+  color: #FF3536;
+}
+
+footer #about .content span:nth-child(3) {
+  color: #60BB28;
+}
+
+footer #about .content p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.8);
 }

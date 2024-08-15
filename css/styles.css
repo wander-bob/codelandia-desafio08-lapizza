@@ -38,7 +38,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  padding-inline: 11.2rem 9.2rem;
+  padding-block: 11.2rem 9.2rem;
 }
 
 #hero img {
@@ -143,12 +143,13 @@ footer #about {
 }
 
 footer #about img {
-  max-height: 50rem;
-  max-width: 48.8rem;
+  width: 48.8rem;
+  height: 50rem;
+  border-radius: 0.6rem;
 }
 
 footer #about .content {
-  max-width: 59.2rem;
+  max-width: 46rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -182,7 +183,16 @@ footer #about .content p {
 
 @media (max-width: 768px) {
   #hero {
-    padding-inline: 10.1rem;
+    padding-block: 10.1rem;
+  }
+
+  #hero img {
+    width: 30rem;
+    height: 19.9rem;
+  }
+
+  .most-selled h2 {
+    font-size: 3.6rem;
   }
 
   .most-selled .cards {
@@ -201,5 +211,25 @@ footer #about .content p {
     min-width: 100%;
     margin-bottom: 6.4rem;
   }
+}
 
+@media (max-width: 375px) {
+  #hero {
+    padding-block: 8rem;
+  }
+
+  .most-selled h2 {
+    font-size: 2.4rem;
+  }
+
+  .most-selled .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  #hero img {
+    width: 21.6rem;
+    height: 14.3rem;
+  }
 }
